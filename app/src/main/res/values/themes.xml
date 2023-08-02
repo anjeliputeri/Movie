@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Movie" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/SpaceCadet</item>
+    </style>
+    <style name="Theme.Movie" parent="Base.Theme.Movie" />
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+</resources>
