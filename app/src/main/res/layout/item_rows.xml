@@ -27,37 +27,38 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-light"
             android:text="Movie Name"
             android:textColor="@color/SandyTan"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/guildLine"
+            app:layout_constraintStart_toStartOf="@+id/guildLine"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imgRate"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_star"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="@id/guildLine"
-            app:layout_constraintTop_toBottomOf="@id/tvMovieName" />
+            app:layout_constraintStart_toStartOf="@+id/guildLine"
+            app:layout_constraintTop_toBottomOf="@+id/tvMovieName" />
 
         <TextView
             android:id="@+id/tvRate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rate"
-            android:textColor="@color/SandyTan"
+            android:layout_marginStart="4dp"
+            android:text="TextView"
+            android:textColor="@color/white"
             android:textSize="10sp"
             android:textStyle="bold"
-            android:layout_marginStart="5dp"
-            app:layout_constraintBottom_toBottomOf="@id/imgRate"
-            app:layout_constraintStart_toEndOf="@id/imgRate"
-            app:layout_constraintTop_toTopOf="@id/imgRate" />
+            app:layout_constraintBottom_toBottomOf="@+id/imgRate"
+            app:layout_constraintStart_toEndOf="@+id/imgRate"
+            app:layout_constraintTop_toTopOf="@+id/imgRate" />
+
 
         <ImageView
             android:id="@+id/imgLang"
@@ -65,43 +66,43 @@
             android:layout_height="15dp"
             android:layout_marginTop="8dp"
             android:src="@drawable/ic_language"
-            app:layout_constraintStart_toStartOf="@id/guildLine"
+            app:layout_constraintStart_toStartOf="@+id/guildLine"
             app:layout_constraintTop_toBottomOf="@id/imgRate" />
 
         <TextView
             android:id="@+id/tvLang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="TextView"
             android:textColor="@color/white"
-            android:text="Lang"
             android:textSize="10sp"
             android:textStyle="bold"
-            android:layout_marginStart="5dp"
-            app:layout_constraintStart_toEndOf="@id/imgLang"
-            app:layout_constraintTop_toTopOf="@id/imgLang"
-            app:layout_constraintBottom_toBottomOf="@id/imgLang"/>
+            app:layout_constraintBottom_toBottomOf="@+id/imgLang"
+            app:layout_constraintStart_toEndOf="@+id/imgLang"
+            app:layout_constraintTop_toTopOf="@+id/imgLang"/>
 
         <ImageView
             android:id="@+id/imgDate"
             android:layout_width="15dp"
             android:layout_height="15dp"
-             android:layout_marginTop="8dp"
+            android:layout_marginTop="8dp"
             android:src="@drawable/ic_date"
-            app:layout_constraintTop_toBottomOf="@id/imgLang"
-            app:layout_constraintStart_toStartOf="@id/guildLine"/>
+            app:layout_constraintStart_toStartOf="@+id/guildLine"
+            app:layout_constraintTop_toBottomOf="@+id/imgLang"/>
 
         <TextView
             android:id="@+id/tvMovieDateReleased"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date"
+            android:text="Date Release"
             android:textColor="@color/white"
             android:textSize="10sp"
             android:textStyle="bold"
-            android:layout_marginStart="5dp"
-            app:layout_constraintStart_toEndOf="@id/imgDate"
-            app:layout_constraintTop_toTopOf="@id/imgDate"
-            app:layout_constraintBottom_toBottomOf="@id/imgDate"/>
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgDate"
+            app:layout_constraintStart_toEndOf="@+id/imgDate"
+            app:layout_constraintTop_toTopOf="@+id/imgDate" />
             
     </androidx.constraintlayout.widget.ConstraintLayout>
     
@@ -109,10 +110,10 @@
         android:id="@+id/imgRoot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/dataRoot"
         app:layout_constraintBottom_toBottomOf="@id/dataRoot"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="20dp">
+        app:layout_constraintStart_toStartOf="@id/dataRoot"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imgMovie"
@@ -122,11 +123,11 @@
             android:background="@color/white"
             app:shapeAppearanceOverlay="@style/RoundedImageView"
             app:srcCompat="@drawable/poster_placeholder"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
